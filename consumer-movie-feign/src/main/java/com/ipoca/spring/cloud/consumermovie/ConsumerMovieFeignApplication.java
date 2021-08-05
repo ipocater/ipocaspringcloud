@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class ConsumerMovieApplication {
+public class ConsumerMovieFeignApplication {
 
     @Bean
     @LoadBalanced
@@ -16,7 +16,7 @@ public class ConsumerMovieApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMovieApplication.class, args);
+        SpringApplication.run(ConsumerMovieFeignApplication.class, args);
     }
 
 }

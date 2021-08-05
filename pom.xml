@@ -17,6 +17,8 @@
     <modules>
         <module>provider-user</module>
         <module>consumer-movie</module>
+        <module>eureka</module>
+        <module>consumer-movie-feign</module>
     </modules>
 
     <properties>
@@ -48,6 +50,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- 引入eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 

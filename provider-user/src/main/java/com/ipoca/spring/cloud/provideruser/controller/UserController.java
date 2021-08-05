@@ -23,7 +23,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping("/{id}")
-    public Optional<User> findById(@PathVariable Long id){
+    public Optional<User> findById(@PathVariable Long id) {
         return this.userRepository.findById(id);
     }
 }

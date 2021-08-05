@@ -18,7 +18,7 @@ public class ProviderUserApplication {
     }
 
     @Bean
-    ApplicationRunner init(UserRepository repository){
+    ApplicationRunner init(UserRepository repository) {
         return args -> {
             User user1 = new User(1L, "account1", "张三", 20, new BigDecimal(100.00));
             User user2 = new User(2L, "account2", "李四", 28, new BigDecimal(180.00));
